@@ -10,7 +10,7 @@
 MADE BY nikosyt_
 
 server discord
-https://discord.gg/Emf74QaxuR                                  
+https://discord.gg/NBJEqtUmPd                                 
 ]]
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
