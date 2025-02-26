@@ -1,0 +1,419 @@
+--[[
+
+██████╗ ██╗     ██╗   ██╗████████╗ ██████╗     ██╗   ██╗██╗
+██╔══██╗██║     ██║   ██║╚══██╔══╝██╔═══██╗    ██║   ██║██║
+██████╔╝██║     ██║   ██║   ██║   ██║   ██║    ██║   ██║██║
+██╔═══╝ ██║     ██║   ██║   ██║   ██║   ██║    ██║   ██║██║
+██║     ███████╗╚██████╔╝   ██║   ╚██████╔╝    ╚██████╔╝██║
+╚═╝     ╚══════╝ ╚═════╝    ╚═╝    ╚═════╝      ╚═════╝ ╚═╝
+
+MADE BY nikosyt_
+
+server discord
+https://discord.gg/Emf74QaxuR                                  
+]]
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("PlutoUI bypasser", "GrapeTheme")
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(164, 13, 246)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "PlutoBypass"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 20.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMinisterq/Notification-Library/refs/heads/Main/Library.lua"))()
+NotificationLibrary:SendNotification("Info", "Welcome To PlutoUI Bypasser                By nikos_YT7", 3)
+
+-- Changelogs
+local Main = Window:NewTab("📁|Changelogs")
+local MainSection = Main:NewSection("📁|Changelogs")
+local MainSection = Main:NewSection("0.1 Added: 🎉RELEASE🎉")
+
+-- Main settings
+local Main = Window:NewTab("Main Settings")
+local MainSection = Main:NewSection("Main Settings")
+
+MainSection:NewButton("ClearChat", "Settings", function()
+    if game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.TextChatService then game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("hi\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\<D<I<S<C<0<R<D<.<G<G</<NB<JE<qtU<mP<d>") else game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Not Supported", Text = "This game has the legacy ROBLOX chat version. The script can only be used in the new version of the ROBLOX chat. Sorry :("}) end
+end)
+
+MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+-- Racist
+local Main = Window:NewTab("Racist")
+local MainSection = Main:NewSection("Racist")
+
+MainSection:NewButton("oh no the nigger monkey is out of its cage!!", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("oh no a n<i<g<g<a m<o<n<k<e<y is out of its c<a<g<e!!")
+end)
+
+MainSection:NewButton("aw is the nigga sad??", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("aw is the <n><i><g><g><a> s<a<d??")
+end)
+
+MainSection:NewButton("RUNN A NIGGER IS COMING!", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("RUNN A <N><I><G><G><E><R> IS C<O<M<I<N<G!")
+end)
+
+MainSection:NewButton("#BlackLivesDoNotMatter", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("#B<l<a<c<kLivesDoNotM<a<t<t<e<r")
+end)
+
+MainSection:NewButton("what a dirty black nigger u are", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("what a dirty b<l<a<c<k <n><i><g><g><e><r> u a<r<e")
+end)
+
+MainSection:NewButton("do u think that niggers should die?", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("do u think that <n><i><g><g><e><r><s> should d<i<e?")
+end)
+
+MainSection:NewButton("well well what a nigga we have here", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("well well what a <n><i><g><g><a> we have here")
+end)
+
+MainSection:NewButton("u invisible at night you nigger", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("u i<n<v<i<s<i<b<l<e at n<i<g<h<t you <n<i><g><g><e><r>")
+end)
+
+MainSection:NewButton("why did they make u stop picking cotton??", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("why did they make u stop p<i<c<k<i<n<g c<o<t<t<o<n??")
+end)
+
+MainSection:NewButton("who is my cute little black nigga slave?", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("who is my c<u<t<e little <b<l<a<c<k> <n><i><g><g><a> s<l<a<v<e?")
+end)
+
+MainSection:NewButton("get back to work u dirty monkey", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("get back to w<o<r<k u d<i<r<t<y m<o<n<k<e<y")
+end)
+
+MainSection:NewButton("nigga no one asked", "Racist", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("n<i<g<g<a no one a<s<k<e<d")
+end)
+
+-- Words
+local Main = Window:NewTab("Words")
+local MainSection = Main:NewSection("Words")
+
+MainSection:NewButton("cum", "Words", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("c<u<m")
+end)
+
+MainSection:NewButton("pussy", "Words", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("<p><u><s><s><y>")
+end)
+
+-- Sex
+local Main = Window:NewTab("Sex")
+local MainSection = Main:NewSection("Sex")
+
+MainSection:NewButton("hello madam nice tits", "Sex", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("hello madam n<i<c<e t<i<t<s")
+end)
+
+MainSection:NewButton("can i feel those soft breasts of yours?", "Sex", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("can i f<e<e<l t<h<o<s<e soft b<r<e<a<s<t<s of y<o<u<r<s?")
+end)
+
+MainSection:NewButton("lemme jerk off to ur roblox body u sex slave", "Sex", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("lemme j<e<r<k o<f<f to ur roblox b<o<d<y u s<e<x s<l<a<v<e")
+end)
+
+MainSection:NewButton("go wash the dishes u fucking sex slave", "Sex", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("go w<a<s<h the d<i<s<h<e<s u f<u<c<k<i<n<g s<e<x s<l<a<v<e")
+end)
+
+MainSection:NewButton("lubes my hard cock with lotion", "Sex", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("l<u<b<e<s my h<a<r<d c<o<c<k with l<o<t<i<o<n")
+end)
+
+MainSection:NewButton("sit on all fours and suck my dick woman", "Sex", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("sit on a<l<l f<o<u<r<s and s<u<c<k my d<i<c<k w<o<m<a<n")
+end)
+
+-- xxxLinks
+local Main = Window:NewTab("xxxLinks")
+local MainSection = Main:NewSection("xxxLinks")
+
+MainSection:NewButton("pornhub.com", "xxxlinks", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("<P<o<r<n<h<u>b>.<c<o<m>")
+end)
+
+MainSection:NewButton("blacked.com", "xxxlinks", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("<B<l<a<c<k<e>d>.<c<o<m>")
+end)
+
+MainSection:NewButton("onlyfans.com", "xxxlinks", function()
+    local function Chat(msg)
+    local oldChat = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+    if oldChat then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    else
+        local textChatService = game:GetService("TextChatService")
+        local channel = textChatService.TextChannels.RBXGeneral
+        channel:SendAsync(msg)
+    end
+end
+Chat("<O<n<l<y<f<a>n><s>.<c<o<m>")
+end)
+
+-- Roblox tab
+local Main = Window:NewTab("Roblox")
+local MainSection = Main:NewSection("Roblox info")
+
+MainSection:NewButton("[Owner] nikos_YT7", "Developer", function()
+    setclipboard("nikos_YT7")
+end)
+
+MainSection:NewButton("[Alt Account] YouDeadWithHax2", "Developer", function()
+    setclipboard("YouDeadWithHax2")
+end)
+
+-- Discord
+local Main = Window:NewTab("Discord")
+local MainSection = Main:NewSection("Discord info")
+
+MainSection:NewButton("[Owner] nikosyt_", "Developer", function()
+    setclipboard("nikosyt_")
+end)
+
+MainSection:NewButton("[Discord Server] .gg/NBJEqtUmPd", "Discord server", function()
+    setclipboard(".gg/NBJEqtUmPd")
+end)
