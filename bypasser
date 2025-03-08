@@ -10,7 +10,7 @@
 MADE BY nikosyt_
 
 server discord
-https://discord.gg/NBJEqtUmPd                                 
+https://discord.gg/2V5xZbpejk                                 
 ]]
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -414,6 +414,6 @@ MainSection:NewButton("[Owner] nikosyt_", "Developer", function()
     setclipboard("nikosyt_")
 end)
 
-MainSection:NewButton("[Discord Server] .gg/NBJEqtUmPd", "Discord server", function()
-    setclipboard(".gg/NBJEqtUmPd")
+MainSection:NewButton("[Discord Server] .gg/2V5xZbpejk", "Discord server", function()
+    setclipboard(".gg/2V5xZbpejk")
 end)
